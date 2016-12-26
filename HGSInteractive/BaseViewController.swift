@@ -112,14 +112,16 @@ class BaseViewController: UIViewController, SlideMenuDelegate  {
     }
     
     
-    func addSlideMenuButton(){
+    func addSlideMenuButton(view : UIView){
         let btnShowMenu = UIButton(type: UIButtonType.custom)
         btnShowMenu.setImage(UIImage(named: "Menu_New.png"), for: UIControlState.normal)
-        btnShowMenu.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        btnShowMenu.frame = CGRect(x: 10, y: 20, width: 50, height: 50)
         btnShowMenu.addTarget(self, action: #selector(onSlideMenuButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
-        let customBarItem = UIBarButtonItem(customView: btnShowMenu)
-        self.navigationItem.leftBarButtonItem = customBarItem;
+        view.addSubview(btnShowMenu)
+        // let customBarItem = UIBarButtonItem(customView: btnShowMenu)
+        // self.navigationItem.leftBarButtonItem = customBarItem;
     }
+
 
 //    func addSlideMenuButtonWithBack(){
 //        
@@ -187,8 +189,8 @@ class BaseViewController: UIViewController, SlideMenuDelegate  {
                 viewMenuBack.frame = frameMenu
                 viewMenuBack.layoutIfNeeded()
                 viewMenuBack.backgroundColor = UIColor.clear
-                }, completion: { (finished) -> Void in
-                    viewMenuBack.removeFromSuperview()
+            }, completion: { (finished) -> Void in
+                viewMenuBack.removeFromSuperview()
             })
             
             return
@@ -205,17 +207,17 @@ class BaseViewController: UIViewController, SlideMenuDelegate  {
         menuVC.view.layoutIfNeeded()
         
         
-        menuVC.view.frame =  CGRect(x: 0 - UIScreen.main.bounds.size.width, y: 64, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height-64)
+        menuVC.view.frame =  CGRect(x: 0 - UIScreen.main.bounds.size.width, y: 80, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height-80)
         
         UIView.animate(withDuration: 0.6, animations: { () -> Void in
-            menuVC.view.frame = CGRect(x: 0 , y: 64, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height-64)
+            menuVC.view.frame = CGRect(x: 0 , y: 80, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height-80)
             
-          //  menuVC.view.frame=CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height);
+            //  menuVC.view.frame=CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height);
             sender.isEnabled = true
-            }, completion:{ (complete: Bool) in
-                
-                menuVC.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-                return
+        }, completion:{ (complete: Bool) in
+            
+            menuVC.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+            return
         })
     }
     
