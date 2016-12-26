@@ -13,6 +13,9 @@
 		0267EF611E092C4500ECE6DB /* HGSInteractive.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0267EF5F1E092C4500ECE6DB /* HGSInteractive.xcdatamodeld */; };
 		0267EF631E092C4500ECE6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0267EF621E092C4500ECE6DB /* Assets.xcassets */; };
 		0267EF661E092C4500ECE6DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0267EF641E092C4500ECE6DB /* LaunchScreen.storyboard */; };
+		0267EF6F1E092E1100ECE6DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267EF6D1E092E1100ECE6DB /* BaseViewController.swift */; };
+		0267EF701E092E1100ECE6DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267EF6E1E092E1100ECE6DB /* MenuViewController.swift */; };
+		0267EF721E096AA500ECE6DB /* Menu_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 0267EF711E096AA500ECE6DB /* Menu_New.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		0267EF621E092C4500ECE6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0267EF651E092C4500ECE6DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0267EF671E092C4500ECE6DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0267EF6D1E092E1100ECE6DB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0267EF6E1E092E1100ECE6DB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0267EF711E096AA500ECE6DB /* Menu_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu_New.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,11 @@
 		0267EF571E092C4500ECE6DB /* HGSInteractive */ = {
 			isa = PBXGroup;
 			children = (
+				0267EF711E096AA500ECE6DB /* Menu_New.png */,
 				0267EF581E092C4500ECE6DB /* AppDelegate.swift */,
 				0267EF5A1E092C4500ECE6DB /* ViewController.swift */,
+				0267EF6D1E092E1100ECE6DB /* BaseViewController.swift */,
+				0267EF6E1E092E1100ECE6DB /* MenuViewController.swift */,
 				0267EF5C1E092C4500ECE6DB /* Main.storyboard */,
 				0267EF621E092C4500ECE6DB /* Assets.xcassets */,
 				0267EF641E092C4500ECE6DB /* LaunchScreen.storyboard */,
@@ -128,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0267EF661E092C4500ECE6DB /* LaunchScreen.storyboard in Resources */,
+				0267EF721E096AA500ECE6DB /* Menu_New.png in Resources */,
 				0267EF631E092C4500ECE6DB /* Assets.xcassets in Resources */,
 				0267EF5E1E092C4500ECE6DB /* Main.storyboard in Resources */,
 			);
@@ -141,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0267EF611E092C4500ECE6DB /* HGSInteractive.xcdatamodeld in Sources */,
+				0267EF701E092E1100ECE6DB /* MenuViewController.swift in Sources */,
+				0267EF6F1E092E1100ECE6DB /* BaseViewController.swift in Sources */,
 				0267EF5B1E092C4500ECE6DB /* ViewController.swift in Sources */,
 				0267EF591E092C4500ECE6DB /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +318,7 @@
 				0267EF6C1E092C4500ECE6DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
