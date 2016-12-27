@@ -32,7 +32,7 @@ class CustomCollectionViewLayout: UICollectionViewFlowLayout {
         
         // iPad 9.7 inch Width = 768.0
         
-        print(bounds.size.width)
+        print(bounds.size.height)
         
         if bounds.size.width == 375
         {
@@ -46,22 +46,24 @@ class CustomCollectionViewLayout: UICollectionViewFlowLayout {
         {
             self.itemSize = CGSize(width: ((bounds.size.width/2)), height: ((bounds.size.height/3)-21.3))
         }
-        else if bounds.size.width <= 768.0
+        else if bounds.size.width == 1024.0
         {
-            self.itemSize = CGSize(width: ((bounds.size.width/3)), height: ((bounds.size.height/3)-21.5))
+            self.itemSize = CGSize(width: ((bounds.size.width/3)-10), height: ((bounds.size.height/2)-85))
         }
-        else
+        else if bounds.size.width == 1366.0
         {
-            self.itemSize = CGSize(width: ((bounds.size.width/3)-30), height: ((bounds.size.height/2)-70))
+            self.itemSize = CGSize(width: ((bounds.size.width/3)-10), height: ((bounds.size.height/2)-97))
         }
-        print(itemSize.height)
-        print(itemSize.width)
+       // print(itemSize.height)
+       // print(itemSize.width)
         
         self.minimumInteritemSpacing = 0
         self.minimumLineSpacing = itemSpacing
         print(bounds.size.width)
         
-        self.sectionInset = UIEdgeInsetsMake(0, 0, 20, 15) //UIEdgeInsetsMake(5, 5, 10, 5)
+        self.sectionInset = UIEdgeInsetsMake(0, 10, 20, 15)
+        
+        //UIEdgeInsetsMake(5, 5, 10, 5)
         
         //        if bounds.size.width == 320
         //        {

@@ -19,6 +19,8 @@
 		0267EF6F1E092E1100ECE6DB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267EF6D1E092E1100ECE6DB /* BaseViewController.swift */; };
 		0267EF701E092E1100ECE6DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0267EF6E1E092E1100ECE6DB /* MenuViewController.swift */; };
 		0267EF721E096AA500ECE6DB /* Menu_New.png in Resources */ = {isa = PBXBuildFile; fileRef = 0267EF711E096AA500ECE6DB /* Menu_New.png */; };
+		02A55EB21E12443600363B31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A55EB11E12443600363B31 /* DetailViewController.swift */; };
+		02A55EBC1E127B3500363B31 /* Flash-scree.png in Resources */ = {isa = PBXBuildFile; fileRef = 02A55EBB1E127B3500363B31 /* Flash-scree.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		0267EF6D1E092E1100ECE6DB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0267EF6E1E092E1100ECE6DB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0267EF711E096AA500ECE6DB /* Menu_New.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu_New.png; sourceTree = "<group>"; };
+		02A55EB11E12443600363B31 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		02A55EBB1E127B3500363B31 /* Flash-scree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Flash-scree.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		0267EF571E092C4500ECE6DB /* HGSInteractive */ = {
 			isa = PBXGroup;
 			children = (
+				02A55EBB1E127B3500363B31 /* Flash-scree.png */,
 				0210F8391E1133E40045A45F /* CustomCollectionViewLayout.swift */,
 				0210F83A1E1133E40045A45F /* CustomCollectionViewCell.swift */,
 				0210F8371E1133A20045A45F /* HGS-Interactive-Logo.png */,
@@ -76,6 +81,7 @@
 				0267EF5A1E092C4500ECE6DB /* ViewController.swift */,
 				0267EF6D1E092E1100ECE6DB /* BaseViewController.swift */,
 				0267EF6E1E092E1100ECE6DB /* MenuViewController.swift */,
+				02A55EB11E12443600363B31 /* DetailViewController.swift */,
 				0267EF5C1E092C4500ECE6DB /* Main.storyboard */,
 				0267EF621E092C4500ECE6DB /* Assets.xcassets */,
 				0267EF641E092C4500ECE6DB /* LaunchScreen.storyboard */,
@@ -146,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0267EF661E092C4500ECE6DB /* LaunchScreen.storyboard in Resources */,
+				02A55EBC1E127B3500363B31 /* Flash-scree.png in Resources */,
 				0267EF721E096AA500ECE6DB /* Menu_New.png in Resources */,
 				0267EF631E092C4500ECE6DB /* Assets.xcassets in Resources */,
 				0210F8381E1133A20045A45F /* HGS-Interactive-Logo.png in Resources */,
@@ -167,6 +174,7 @@
 				0267EF5B1E092C4500ECE6DB /* ViewController.swift in Sources */,
 				0210F83B1E1133E40045A45F /* CustomCollectionViewLayout.swift in Sources */,
 				0267EF591E092C4500ECE6DB /* AppDelegate.swift in Sources */,
+				02A55EB21E12443600363B31 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

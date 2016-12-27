@@ -33,7 +33,6 @@ class CustomCollectionViewCell: UICollectionViewCell
         print(boundss.size.height)
         print(boundss.size.width)
         
-        
         if boundss.size.width == 375
         {
             self.imgUser.frame = CGRect(x: -0.2, y: 0, width: 188, height: 204)
@@ -76,7 +75,6 @@ class CustomCollectionViewCell: UICollectionViewCell
             self.moduleIcon.frame=CGRect(x: 20, y: 0, width: (boundss.size.width/3)-50, height: boundss.size.height/2-50)
         }
         
-        
         else if boundss.size.width == 1366.0
         {
             //self.imgUser.frame = CGRect(x: 0, y: 0, width: 400, height: 446)
@@ -88,7 +86,6 @@ class CustomCollectionViewCell: UICollectionViewCell
             
             self.moduleIcon.frame=CGRect(x: 20, y: 0, width: (boundss.size.width/3)-50, height: boundss.size.height/2-50)
         }
-        
         
         
         print(self.moduleIcon.frame)

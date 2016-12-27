@@ -29,7 +29,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate  {
         case 0:
             //print("Home\n", terminator: "")
 
-          //  self.openViewControllerBasedOnIdentifier("home_page")
+            self.openViewControllerBasedOnIdentifier(strIdentifier: "home_page")
             
             break
         case 1:
@@ -102,13 +102,13 @@ class BaseViewController: UIViewController, SlideMenuDelegate  {
     func openViewControllerBasedOnIdentifier(strIdentifier:String){
         let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
         
-        let topViewController : UIViewController = self.navigationController!.topViewController!
+      //  let topViewController : UIViewController = self.navigationController!.topViewController!
         
-        if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
-            print("Same VC")
-        } else {
+       // if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
+       //     print("Same VC")
+      //  } else {
             self.navigationController!.pushViewController(destViewController, animated: true)
-        }
+        //}
     }
     
     

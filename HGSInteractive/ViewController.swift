@@ -21,6 +21,7 @@ class ViewController: BaseViewController {
     //var titleArray = ["Demat","Mutual Funds","National Pension Scheme","IPO / Bonds / FD","Gold Rush","Services"]
     //  var imagesArray = ["demat.png","mutual_fund.png","nps.png","ipo.png","gold_rush.png","services.png"]
     
+    @IBOutlet var topBarImageView: UIImageView!
     var arrayOfCellData = [cellData]()
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -28,9 +29,13 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrayOfCellData = [cellData(text : "Berger Paints" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-1")) , cellData(text : "Nakshatra.world" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-2")),cellData(text : "Samuels Jewelers" , text2 : "Mobile App" , image : #imageLiteral(resourceName: "teb-portfolio-3")) , cellData(text : "Citytower Real Estate" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-4")), cellData(text : "Akoma" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-5")),cellData(text : "Park-a-car" , text2 : "Mobile App" , image : #imageLiteral(resourceName: "teb-portfolio-6")), cellData(text : "Force Traveller" , text2 : "" , image : #imageLiteral(resourceName: "teb-portfolio-8"))]
+        arrayOfCellData = [cellData(text : "Berger Paints" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-1")) , cellData(text : "Nakshatra.world" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-2")),cellData(text : "Samuels Jewelers" , text2 : "Social Media" , image : #imageLiteral(resourceName: "teb-portfolio-3")) , cellData(text : "Citytower Real Estate" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-4")), cellData(text : "Akoma" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-5")),cellData(text : "Park-a-car" , text2 : "Mobile App" , image : #imageLiteral(resourceName: "teb-portfolio-6")), cellData(text : "Force Traveller" , text2 : "" , image : #imageLiteral(resourceName: "teb-portfolio-8"))]
         
         addSlideMenuButton(view : self.view)
+        
+        self.topBarImageView.layer.shadowColor = UIColor.black.cgColor
+        self.topBarImageView.layer.shadowOpacity = 0.2
+        self.topBarImageView.layer.shadowOffset = CGSize.zero
     }
     
     func numberOfSectionsInCollectionView(_ collectionView: UICollectionView) -> Int {
@@ -59,8 +64,8 @@ class ViewController: BaseViewController {
         
         if indexPath.row == 0
         {
-            //           let summaryController = self.storyboard?.instantiateViewControllerWithIdentifier("summary_view") as! SummaryViewController
-            //            self.navigationController?.pushViewController(summaryController, animated: true)
+            let summaryController = self.storyboard?.instantiateViewController(withIdentifier: "detail_View") as! DetailViewController
+            self.navigationController?.pushViewController(summaryController, animated: true)
         }
         else if indexPath.row == 1
         {
