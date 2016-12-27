@@ -26,6 +26,10 @@ class CustomCollectionViewCell: UICollectionViewCell
         self.siteLabel.translatesAutoresizingMaskIntoConstraints = true
         self.moduleIcon.translatesAutoresizingMaskIntoConstraints = true
         
+        self.moduleIcon.layer.shadowColor = UIColor.black.cgColor
+        self.moduleIcon.layer.shadowOpacity = 0.5
+        self.moduleIcon.layer.shadowOffset = CGSize.zero
+        
         print(boundss.size.height)
         print(boundss.size.width)
         
@@ -63,10 +67,13 @@ class CustomCollectionViewCell: UICollectionViewCell
         }
         else if boundss.size.width == 1024.0
         {
-            self.imgUser.frame = CGRect(x: 0, y: 0, width: 512.5, height: 446)
-            self.nameLabel.font = UIFont(name: "Helvetica", size: 25)
-            self.nameLabel.frame=CGRect(x: 0, y: ((boundss.size.width/2)-210), width: ((boundss.size.width/2)-10), height: 60)
-            self.moduleIcon.frame=CGRect(x: (((boundss.size.width-20)/2)-140)/2, y: 90, width: 140, height: 140)
+            self.nameLabel.font = UIFont(name: "Helvetica", size: 16)
+            self.nameLabel.frame=CGRect(x: 35, y: ((boundss.size.width/3)-87), width: ((boundss.size.width/3)-130), height: 30)
+            
+            self.siteLabel.font = UIFont(name: "HelveticaNeue-Italic", size: 13)
+            self.siteLabel.frame=CGRect(x: 35, y: ((boundss.size.width/3)-68), width: ((boundss.size.width/3)-130), height: 30)
+            
+            self.moduleIcon.frame=CGRect(x: 20, y: 0, width: (boundss.size.width/3)-50, height: boundss.size.height/2-50)
         }
         
         
@@ -81,6 +88,8 @@ class CustomCollectionViewCell: UICollectionViewCell
             
             self.moduleIcon.frame=CGRect(x: 20, y: 0, width: (boundss.size.width/3)-50, height: boundss.size.height/2-50)
         }
+        
+        
         
         print(self.moduleIcon.frame)
         

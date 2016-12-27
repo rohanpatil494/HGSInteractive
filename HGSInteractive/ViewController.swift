@@ -28,8 +28,7 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        arrayOfCellData = [cellData(text : "Berger Paints" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-1")) , cellData(text : "Nakshatra.world" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-2")),cellData(text : "Samuels Jewelers" , text2 : "Mobile App" , image : #imageLiteral(resourceName: "teb-portfolio-3")) , cellData(text : "Citytower Real Estate" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-4")), cellData(text : "Akoma" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-5")),cellData(text : "Park-a-car" , text2 : "Mobile App" , image : #imageLiteral(resourceName: "teb-portfolio-6"))]
+        arrayOfCellData = [cellData(text : "Berger Paints" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-1")) , cellData(text : "Nakshatra.world" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-2")),cellData(text : "Samuels Jewelers" , text2 : "Mobile App" , image : #imageLiteral(resourceName: "teb-portfolio-3")) , cellData(text : "Citytower Real Estate" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-4")), cellData(text : "Akoma" , text2 : "Website Responsive" , image : #imageLiteral(resourceName: "teb-portfolio-5")),cellData(text : "Park-a-car" , text2 : "Mobile App" , image : #imageLiteral(resourceName: "teb-portfolio-6")), cellData(text : "Force Traveller" , text2 : "" , image : #imageLiteral(resourceName: "teb-portfolio-8"))]
         
         addSlideMenuButton(view : self.view)
     }

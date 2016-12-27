@@ -27,7 +27,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N4k-tU-pQD">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N4k-tU-pQD">
                                 <rect key="frame" x="0.0" y="83" width="1366" height="941"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -133,7 +133,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="XhW-z1-KMi" firstAttribute="top" secondItem="adU-lc-vsM" secondAttribute="bottom" constant="-64" id="4g8-QD-X6b"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N4k-tU-pQD" secondAttribute="bottom" id="Jcc-JU-DG0"/>

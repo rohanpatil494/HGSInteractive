@@ -115,7 +115,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate  {
     func addSlideMenuButton(view : UIView){
         let btnShowMenu = UIButton(type: UIButtonType.custom)
         btnShowMenu.setImage(UIImage(named: "Menu_New.png"), for: UIControlState.normal)
-        btnShowMenu.frame = CGRect(x: 10, y: 20, width: 50, height: 50)
+        btnShowMenu.frame = CGRect(x: 20, y: 35, width: 40, height: 30)
         btnShowMenu.addTarget(self, action: #selector(onSlideMenuButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
         view.addSubview(btnShowMenu)
         // let customBarItem = UIBarButtonItem(customView: btnShowMenu)
